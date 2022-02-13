@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- Title section -->
+        <section>
+            <div class="lthl-flexbox">
+                <div>
+                    <small class="lthl-small">settings</small><br>
+                    <label class="lthl-label">lthl leader</label>
+                </div>
+                <div>
+                    <span class="title__img-1">
+                    <img src="../../assets/icons-LTHL/notification.png" alt="notification img">
+                </span>
+                    <Span class="title__img-2"><img src="../../assets/icons-LTHL/user.png" alt="user img"></Span>
+                </div>
+            </div>
+        </section>
+        <!-- filter section -->
+        <section class="filter-section mt-3">
+            <div class="lthl-flexbox filter-area">
+                <div class="col-md-3">
+                    <div class="search-bar">
+                        <input type="search" class="input-search" placeholder="Search LTHL Leader">
+                        <span class="fa fa-search search-bar-icon"><img src="../../assets/icons-LTHL/search.png" alt="search img"></span>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-btn" data-toggle="modal" data-target="#lthltarget"><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add LTHL Leader</button>
+                </div>
+            </div>
+        </section>
+        <!-- grid section -->
+        <section class="grid-section mt-2">
+            <table class="table lthl-table">
+                <thead class="bg-linear">
+                    <tr>
+                        <th scope="col" style="width: 10%;">LTHL Leader ID</th>
+                        <th scope="col" style="width: 20%;">Name</th>
+                        <th scope="col" style="width: 20%;">Surname</th>
+                        <th scope="col" style="width: 20%;">Site Mgr.</th>
+                        <th scope="col" style="width: 10%;">Status</th>
+                        <th scope="col" style="width: 10%;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">3</td>
+                        <td>Somchai</td>
+                        <td>Otto</td>
+                        <td><span>Wadsana Umnuaysilp</span><br>
+                            <span>Wadsana Umnuaysilp</span></td>
+                        <td><label class="switch-grid">
+                            <input type="checkbox" checked>
+                            <span class="slider round-grid"></span>
+                          </label></td>
+                        <td><img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>Rodjana</td>
+                        <td>Thornton</td>
+                        <td><span>Mana Chaiyapan</span></td>
+                        <td><label class="switch-grid">
+                        <input type="checkbox" checked>
+                        <span class="slider round-grid"></span>
+                      </label></td>
+                        <td><img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Rinradee</td>
+                        <td>the Bird</td>
+                        <td><span>Wadsana Umnuaysilp</span></td>
+                        <td>
+                            <label class="switch-grid">
+                            <input type="checkbox" checked>
+                            <span class="slider round-grid"></span>
+                          </label>
+                        </td>
+                        <td><img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section-pagination mt-5  d-flex justify-content-center align-items-center">
+            <div>
+                <select name="per-page" id="per-page">
+                    <option value="fifteen">15</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                  </select>
+                <small class="small-perpage">per page</small>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                    <li class="page-item"><a class="page-link" href="#">13</a></li>
+                    <li class="page-item"><a class="page-link" style="color: #000000 !important;" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- popup section -->
+        <section>
+            <!-- Modal -->
+            <div class="col-md-4"></div>
+            <div class="col-md-3">
+                <div class="modal fade" id="lthltarget" tabindex="-1" role="dialog" aria-labelledby="lthltarget" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="mr-2" aria-hidden="true">&times;</span>
+                          </button>
+                            </div>
+                            <div class="modal-header">
+                                <h5 class="lthl_popup-title" id="exampleModalLongTitle">add lthl leader</h5>
+
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <label>Name <span>*</span></label>
+                                    <input type="text" placeholder="Enter Name here">
+                                </div>
+                                <div>
+                                    <label>Surname <span>*</span></label>
+                                    <input type="text" placeholder="Enter Surname here">
+                                </div>
+                                <div id="dropdown" style="width: 100%;">
+                                  <ng-select2 [data]="exampleData" [options]="options" ></ng-select2>
+                                </div>
+                                <div>
+                                    <label>Site Mgr. <span>*</span></label>
+
+
+
+                                    <div class="form-group">
+                                        <select class="select2-icons form-control" multiple>
+                                            <optgroup label="Services">
+                                                <option value="Wordpress2" data-icon="fa fa-wordpress" selected>WordPress</option>
+                                                <option value="Codepen" data-icon="fa fa-codepen">Codepen</option>
+                                                <option value="Drupal" data-icon="fa fa-drupal">Drupal</option>
+                                                <option value="Pinterest2" data-icon="fa fa-css3">CSS3</option>
+                                                <option value="HTML5" data-icon="fa fa-html5">HTML5</option>
+                                            </optgroup>
+                                            <optgroup label="File types">
+                                                <option value="Pdf" data-icon="fa fa-file-pdf-o" selected>PDF</option>
+                                                <option value="Word" data-icon="fa fa-file-word-o">Word</option>
+                                                <option value="Excel" data-icon="fa fa-file-excel-o">Excel</option>
+                                            </optgroup>
+                                            <optgroup label="Browsers">
+                                                <option value="Chrome" data-icon="fa fa-chrome">Chrome</option>
+                                                <option value="Firefox" data-icon="fa fa-firefox">Firefox</option>
+                                                <option value="Safari" data-icon="fa fa-safari">Safari</option>
+                                                <option value="Opera" data-icon="fa fa-opera">Opera</option>
+                                                <option value="IE" data-icon="fa fa-internet-explorer">IE</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer pt-5">
+                                <button type="button" class="btn btn-save">Save</button>
+                                <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </section>
+    </main>
+</body>
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="../../assets/js/select2.js"></script>
+<script src="../../assets/js/select2.min.js"></script>
+
+</html>
