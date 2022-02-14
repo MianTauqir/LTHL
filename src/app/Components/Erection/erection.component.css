@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  height: 0;
+}
+
+main {
+  width: 90%;
+  margin: 2rem 6rem;
+}
+
+.modal {
+  background-color: #fff;
+}
+
+.main-class {
+  position: relative;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-align-center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.subtile-heading {
+  padding: 0.75rem;
+}
+
+.erec-label-style {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.erec-label-head {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #606060;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  padding: 2rem 0rem 1rem 6rem !important;
+}
+
+.steric {
+  color: red;
+  font-size: 13px;
+}
+
+.bg-linear.flexbox {
+  border-radius: 0px;
+}
+
+section.section-erection-2 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.border-bottom-red {
+  border-bottom: 3px solid #FF0601;
+}
+
+.lthl-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lthl-small {
+  color: #B5B5B5;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.lthl-label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.title__img-1 {
+  margin-right: 15px;
+}
+
+.input-search {
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  box-sizing: border-box;
+  border-radius: 25px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 1.1rem 1.5rem;
+  width: 100%;
+}
+
+.input-search::placeholder {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #D7D7D7;
+}
+
+.input-search:focus {
+  border: 1px solid rgba(255, 6, 1, 0.48);
+  outline: none;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar-icon {
+  position: absolute;
+  z-index: 2;
+  top: 0.4rem;
+  right: 0.7rem;
+  text-align: center;
+  pointer-events: none;
+  color: #D7D7D7;
+}
+
+.plus-icon {
+  color: #FFFFFF;
+  margin-right: .5rem;
+}
+
+.add-btn {
+  background: linear-gradient(92.65deg, rgba(255, 6, 1, 0.5) 0.32%, rgba(255, 42, 1, 0.5) 75.24%, rgba(255, 118, 1, 0.5) 99.53%);
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.bg-linear {
+  background: linear-gradient(0deg, rgba(255, 6, 1, 0.5), rgba(255, 6, 1, 0.5));
+  border-radius: 4px 4px 0px 0px;
+}
+
+.lthl-table thead th {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #FFFFFF;
+  border-right: none;
+}
+
+.lthl-table td,
+.table th {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #000000;
+  border-right: 1px solid #B7B7B7;
+  vertical-align: middle;
+}
+
+
+/* table.table.lthl-table tr td:nth-child(1) {
+  text-align: center;
+} */
+
+#table-border-none tr th {
+  border: none;
+}
+
+.table-border td,
+th {
+  border: 1px solid #dee2e6;
+}
+
+table.table.lthl-table tr td:nth-child(5) span {
+  background: #FBE3E2;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  margin: 0.4rem;
+}
+
+
+/* table.table.lthl-table tbody tr:nth-child(1) {
+  height: 80px;
+} */
+
+table.table.lthl-table td:nth-child(6) {
+  text-align: center;
+  border-right: none;
+}
+
+select#amount-select {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 1rem;
+}
+
+.general-code {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border-right: none;
+  padding: 0.75rem;
+}
+
+.erection-primary {
+  color: #727272;
+}
+
+.erection-secondary {
+  color: #000;
+}
+
+.erection-tertiary {
+  color: #000;
+}
+
+.erection-body-1 {
+  padding: 0.75rem;
+}
+
+.erection-body-1 div {
+  padding: 0.1rem;
+}
+
+.scafff-type {
+  color: #AA1C1C;
+}
+
+.general-code {
+  text-transform: uppercase;
+}
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-checkbox2 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container-checkbox2:hover input~.checkmark2 {
+  background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox input:checked~.checkmark {
+  background-color: #FF0601;
+}
+
+.container-checkbox2 input:checked~.checkmark2 {
+  background-color: #ccc;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+.container-checkbox2 input:checked~.checkmark2:after {
+  display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container-checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container-checkbox2 input:checked~.checkmark2 {
+  background-color: #FF0601;
+  border-radius: 1px;
+}
+
+.container-checkbox2 .checkmark2:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container-checkbox2 input:checked~.checkmark2 {
+  background-color: #b5aeae;
+  border-radius: 1px;
+}
+
+
+/* Rounded sliders */
+
+.switch-grid {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.4rem;
+}
+
+.switch-grid input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #E4E4E4;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 1.8rem;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background: #AEDEA6;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #000;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(-24px);
+  -ms-transform: translateX(-24px);
+  transform: translateX(-24px);
+}
+
+.slider.round-grid {
+  border-radius: 34px;
+}
+
+.slider.round-grid:before {
+  border-radius: 50%;
+}
+
+
+/* pagination */
+
+.page-link {
+  border: none;
+  font-family: Calibri !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px !important;
+  line-height: 15px;
+  /* identical to box height */
+  color: #6A6A6A !important;
+}
+
+.page-link:focus,
+.page-link:active,
+.page-link:hover {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #FF0601 !important;
+  ;
+}
+
+.pagination li {
+  padding: 2rem;
+}
+
+#per-page {
+  border: 1px solid #CFCFCF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  padding: 0.4rem;
+}
+
+.small-perpage {
+  margin: 0.5rem 0.4rem;
+  vertical-align: bottom;
+}
+
+
+/* popup section */
+
+.modal-dialog {
+  margin: 1.75rem auto !IMPORTANT;
+}
+
+.modal-header {
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  border-bottom: 1px solid #D10000;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-content {
+  width: 70%;
+}
+
+.modal-dialog-centered {
+  justify-content: center;
+}
+
+.modal-footer {
+  padding: 0.75rem;
+  justify-content: center;
+}
+
+.modal-footer>* {
+  margin: 0.25rem;
+}
+
+.btn {
+  padding: 0.375rem 0.75rem;
+}
+
+.lthl_popup-title {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #AA1C1C;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.close {
+  opacity: 1;
+}
+
+.btn-save {
+  background: rgba(255, 6, 1, 0.3);
+  color: #AA1C1C;
+  border-radius: 4px;
+  padding: 0.1rem 1rem;
+  width: 5rem;
+}
+
+.btn-cancel {
+  background: #E8E8E8;
+  color: #737373;
+  border-radius: 4px;
+  padding: 0.1rem 1rem;
+  width: 5rem;
+}
+
+input[type="text"] {
+  border: 1px solid #B5B5B5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+input[type="text"] ::placeholder {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #B5B5B5;
+}
+
+.modal-body label {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #727272;
+}
+
+.modal-body div {
+  margin-bottom: 0.8rem;
+}
+
+.erection-main {
+  position: relative;
+  padding: 2rem;
+}
+
+.erection-heading {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #727272;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  padding-left: 0;
+  z-index: 2000;
+}
+
+.fixed-btn {
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0 !important;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  z-index: 2000;
+}

@@ -1,0 +1,931 @@
+<p>erection works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main-class">
+        <!-- Title section -->
+        <section>
+            <div class="lthl-flexbox">
+                <div>
+                    <small class="lthl-small">SCAFFOLDING REGISTRATION</small><br>
+                    <label class="lthl-label">ERECTION</label>
+                </div>
+                <div>
+                    <span class="title__img-1">
+                    <img src="../../assets/icons-LTHL/notification.png" alt="notification img">
+                </span>
+                    <Span class="title__img-2"><img src="../../assets/icons-LTHL/user.png" alt="user img"></Span>
+                </div>
+            </div>
+        </section>
+        <!-- filter section -->
+        <section class="filter-section mt-5">
+            <div class="lthl-flexbox filter-area">
+                <div class="col-md-3">
+                    <div class="search-bar">
+                        <input type="search" class="input-search" placeholder="Search LTHL Leader">
+                        <span class="fa fa-search search-bar-icon"><img src="../../assets/icons-LTHL/search.png" alt="search img"></span>
+                    </div>
+                </div>
+                <div>
+                    <button class="add-btn" data-toggle="modal" data-target="#lthltarget"><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add Erection Registration</button>
+                </div>
+            </div>
+        </section>
+        <!-- grid section -->
+        <section class="grid-section mt-2">
+            <table class="table lthl-table" id="table-border-none">
+                <thead class="bg-linear">
+                    <tr>
+                        <th scope="col" style="width: 10%;">Project Code</th>
+                        <th scope="col" style="width: 20%;">Project Name</th>
+                        <th scope="col" style="width: 20%;">Company Code</th>
+                        <th scope="col" style="width: 10%;">Request No.</th>
+                        <th scope="col" style="width: 25%;">Scaffolding Code</th>
+                        <th scope="col" style="width: 10%;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">ACT-001</td>
+                        <td>Somchai</td>
+                        <td>Otto</td>
+
+                        <td>LTHL-TBCA-00001</td>
+                        <td><span>IND  (6-11)</span>
+                            <span>IND  (1)</span></td>
+                        <td><img class="delete-icon" src="../../assets/icons-LTHL/paper-search.png" alt="paper search img">
+                            <img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img"></td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">ACT-001</td>
+                        <td>Rodjana</td>
+                        <td>Thornton</td>
+
+                        <td>LTHL-TBCA-00001</td>
+                        <td><span>IND  (6-11)</span><span>MOB (1)</span><span>SMB (10)</span></td>
+                        <td><img class="delete-icon" src="../../assets/icons-LTHL/paper-search.png" alt="paper search img">
+                            <img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">ACT-001</td>
+                        <td>Rinradee</td>
+                        <td>the Bird</td>
+
+                        <td>
+                            LTHL-TBCA-00001
+                        </td>
+                        <td><span>IND  (6-11)</span><span>MOB (1)</span>
+                        </td>
+                        <td>
+                            <img class="delete-icon" src="../../assets/icons-LTHL/paper-search.png" alt="paper search img">
+                            <img class="pencil-icon" src="../../assets/icons-LTHL/pencil.png" alt="pencil img"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="section-pagination mt-5  d-flex justify-content-center align-items-center">
+            <div>
+                <select name="per-page" id="per-page">
+                    <option value="fifteen">15</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                  </select>
+                <small class="small-perpage">per page</small>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                    <li class="page-item"><a class="page-link" href="#">13</a></li>
+                    <li class="page-item"><a class="page-link" style="color: #000000 !important;" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- popup section -->
+        <section>
+            <!-- Modal -->
+            <div class="col-md-12">
+                <div class="modal fade" id="lthltarget" tabindex="-1" role="dialog" aria-labelledby="lthltarget" aria-hidden="true">
+                    <div class="modal-body">
+                        <section class="erection-main" id="lthltarget" tabindex="-1" role="dialog" aria-labelledby="lthltarget" aria-hidden="true">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="erection-heading"><span><img src="../../assets/icons-LTHL/left-arrow.png" alt="left arrow"></span> ERECTION REGISTRATION</div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-4 pr-2">
+                                    <label class="erection-secondary erec-label-style" style="color: #616161;">Project Code<span class="steric">*</span></label>
+                                    <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style mb-4" id="Elevation-range">
+                                        <option value="volvo">Select Elevation Range</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                        </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="erection-secondary erec-label-style" style="color: #616161;">Request No.<span class="steric">*</span></label>
+                                    <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style mb-4" id="Elevation-range">
+                                        <option value="volvo">Select Elevation Range</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                        </select>
+                                </div>
+                            </div>
+                            <section class="section-erection-2">
+
+                                <!-- general info -->
+                                <div class="bg-linear flexbox">
+                                    <div>
+                                        <h4 class="general-code m-0">general code</h4>
+                                    </div>
+                                    <div class="up-arrow mr-3">
+                                        <img src="../../assets/icons-LTHL/up-arrow.png">
+                                    </div>
+                                </div>
+                                <div class="erection-body-1">
+                                    <div class="row">
+                                        <div class="col-md-1"><label class="erection-primary erec-label-style">Project Name:</label></div>
+                                        <div class="col-md-3"><label class="erection-secondary erec-label-style">Din Daeng</label></div>
+                                        <div class="col-md-2"><label class="erection-tertiary erec-label-style"><label class="container-checkbox">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label><span class="ml-4">(6-20)</span> </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"><label class="erection-primary erec-label-style">Site Mgr.:</label></div>
+                                        <div class="col-md-3"><label class="erection-secondary erec-label-style">Sukanya Wattawasin</label></div>
+                                        <div class="col-md-2"><label class="erection-tertiary erec-label-style">
+                                                <label class="container-checkbox">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label>
+                                            <span class="ml-4">Tent</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"><label class="erection-primary erec-label-style">Company Code:</label></div>
+                                        <div class="col-md-3"><label class="erection-secondary erec-label-style">TBCA</label></div>
+                                        <div class="col-md-2 d-flex align align-items-center"><label class="erection-tertiary erec-label-style">
+                                                <label class="container-checkbox">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                              </label><span class="ml-4">One Mobile (2)</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1"><label class="erection-primary erec-label-style">Required Date:</label></div>
+                                        <div class="col-md-3"><label class="erection-secondary erec-label-style">20/11/2021</label></div>
+                                    </div>
+                                </div>
+                                <!-- Scaffolding Type: -->
+                                <div class="bg-linear flexbox">
+                                    <div>
+                                        <h4 class="scaff-type erec-label-style subtile-heading m-0">Scaffolding Type: <span class="ml-2" style="color: #fff;">INDEPENDENT (6-20)</span></h4>
+                                    </div>
+                                    <div class="up-arrow mr-3">
+                                        <img src="../../assets/icons-LTHL/up-arrow.png">
+                                    </div>
+                                </div>
+                                <div class="erection-body-1">
+                                    <div class="row">
+                                        <div class="col-md-4"><label class="erection-primary erec-label-style">Erection Plan Date:</label><br>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <h4 class="erec-label-head border-bottom-red"> work progress</h4>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="d-align-center">
+                                            <div class="col-md-4"><label class="erection-primary erec-label-style">Doing Date:</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-primary erec-label-style">Progress:</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4"><label class="erection-primary erec-label-style">Complete Date</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="text-right">
+                                                    <button class="add-btn" data-toggle="" data-target=""><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add Work Progress</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;">Doing Date</th>
+                                                        <th scope="col" style="width: 20%;text-align: right;">Progress(%)</th>
+                                                        <th scope="col" style="width: 20%;">Complete Date</th>
+                                                        <th scope="col" style="width: 10%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">100%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">90%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">70%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mt-4 mb-3">
+                                                <hr style="border: 1px solid #B5B5B5;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- customer 1 -->
+                                    <div class="row">
+                                        <div class="w-100 d-flex ">
+                                            <div class="col-md-1">
+                                                <h4 class="erec-label-head border-bottom-red" style="display: inline-block;">customer</h4>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="erection-primary erec-label-style">summary number for customer:<Span class="ml-2" style="color: #000;">E-LTHL-TBCA-001</Span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;text-align: center;">W</th>
+                                                        <th scope="col" style="width: 10%;text-align: center;">L</th>
+                                                        <th scope="col" style="width: 10%;text-align: center;">H</th>
+                                                        <th scope="col" style="width: 10%;text-align: right;">BQ</th>
+                                                        <th scope="col" style="width: 20%;text-align: center;">Elevation Range</th>
+                                                        <th scope="col" style="width: 10%;text-align: center;">Elevation</th>
+                                                        <th scope="col" style="width: 10%;text-align: center;">Free of Charge</th>
+                                                        <th scope="col" style="width: 20%;text-align: center;">Unit Rate</th>
+                                                        <th scope="col" style="width: 20%;text-align: center;">Amount(B)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row" style="text-align: center;">25.13</td>
+                                                        <td style="text-align: center;">25.13</td>
+                                                        <td style="text-align: center;">25.13</td>
+                                                        <td style="text-align: right;">25.13</td>
+                                                        <td style="text-align: center;">
+                                                            <select name="cars" id="amount-select">
+                                                                  <option value="volvo">25.55 up</option>
+                                                                  <option value="saab">Saab</option>
+                                                                  <option value="mercedes">Mercedes</option>
+                                                                  <option value="audi">Audi</option>
+                                                                </select></td>
+                                                        <td style="text-align: center;">Elevation</td>
+                                                        <td style="text-align: right;">15</td>
+                                                        <td style="text-align: center;">125.13</td>
+                                                        <td style="text-align: center;">150.1300</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 mb-3">
+                                        <div class="w-100 d-flex ">
+                                            <div class="col-md-1">
+                                                <h4 class="erec-label-head border-bottom-red" style="display: inline-block;">Options</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="erection-body-1">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <label class="erection-primary erec-label-style">Coefficient Rates</label>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-primary erec-label-style">Value</label>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-primary erec-label-style">Plus Rate</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="d-flex">
+                                                    <label class="container-checkbox2">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark2"></span>
+                                                  </label>
+                                                    <label class="erection-primary erec-label-style ml-4" style="text-transform:capitalize;">
+                                                    special working condition withspecial equipment[PVC suit ,cowl, boots,gloves and mask]:
+                                                </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-secondary erec-label-style">1.5</label></div>
+                                            <div class="col-md-2">
+                                                <label class="erection-tertiary erec-label-style">
+                                                    <label class="container-checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <span class="ml-4">Engineer Design</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="erection-primary erec-label-style">120 B/Set</label></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="d-flex">
+                                                    <label class="container-checkbox2">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark2"></span>
+                                                      </label>
+                                                    <label class="erection-primary erec-label-style ml-4">High corrosion</label></div>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-secondary erec-label-style">2</label></div>
+                                            <div class="col-md-2"><label class="erection-tertiary erec-label-style">
+                                                    <label class="container-checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                  </label>
+                                                <span class="ml-4">Engineer Design</span></label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="erection-primary erec-label-style">120 B/Set</label></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="d-flex">
+                                                    <label class="container-checkbox2">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark2"></span>
+                                                      </label><label class="erection-primary erec-label-style ml-4">Low corrosion</label></div>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-secondary erec-label-style">3</label></div>
+                                            <div class="col-md-2 d-flex align align-items-center"><label class="erection-tertiary erec-label-style">
+                                                    <label class="container-checkbox">
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                  </label><span class="ml-4">Overtime Cost</span></label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="erection-primary erec-label-style">120 B/Set</label></div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-2 ">
+                                                <div class="d-flex">
+                                                    <label class="container-checkbox2">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark2"></span>
+                                                      </label>
+                                                    <label class="erection-primary erec-label-style ml-4">working day overtime & saturday</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 "><label class="erection-secondary erec-label-style ">4</label></div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-2 ">
+                                                <div class="d-flex">
+                                                    <label class="container-checkbox2">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark2"></span>
+                                                      </label><label class="erection-primary erec-label-style text-transform:capitalize ml-4">sunday holidays</label></div>
+                                            </div>
+                                            <div class="col-md-3 "><label class="erection-secondary erec-label-style ">1.8</label></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mt-4 mb-3">
+                                                    <hr style="border: 1px solid #B5B5B5;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label class="erection-secondary erec-label-style ">Erection Use:</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="d-flex">
+                                                <label class="container-checkbox">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                                <label class="erection-primary erec-label-style ml-4">LTHL</label>
+                                            </div>
+                                            <div class="ml-4 d-flex">
+                                                <label class="container-checkbox">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                                <label class="erection-primary erec-label-style ml-4">Subcontractors</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mt-4 mb-3">
+                                                    <hr style="border: 1px solid #B5B5B5;">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Lthl -->
+                                        <div class="row">
+                                            <h4 class="erec-label-head border-bottom-red">LTHL</h4>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-3">
+                                                <table class="table lthl-table table-border">
+                                                    <thead class="bg-linear">
+                                                        <tr>
+                                                            <th scope="col" style="width: 10%;">W</th>
+                                                            <th scope="col" style="width: 20%;">L</th>
+                                                            <th scope="col" style="width: 20%;">H</th>
+                                                            <th scope="col" style="width: 10%;text-align: right;">BQ</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row">3|</td>
+                                                            <td style="text-align:cenetr">L</td>
+                                                            <td style="text-align:cenetr">H</td>
+                                                            <td>2,2002.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mt-4 mb-3">
+                                                    <hr style="border: 1px solid #B5B5B5;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- subcontractor -->
+                                        <div class="row mt-3">
+                                            <h4 class="erec-label-head border-bottom-red">Subcontractor</h4>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-4"></div>
+                                            <div class="col-md-4"></div>
+                                            <div class="col-md-4">
+                                                <label class="erection-secondary erec-label-style" style="color: #616161;">Sub Code No.</label>
+                                                <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style" id="Elevation-range">
+                                                    <option value="volvo">Select Sub Code No.</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="d-align-center">
+                                                <div class="col-md-4">
+                                                    <label class="erection-secondary erec-label-style" style="color: #616161;">Elevation Range</label>
+                                                    <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style mb-4" id="Elevation-range">
+                                                    <option value="volvo">Select Elevation Range</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                              </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="text-right">
+                                                        <button class="add-btn" data-toggle="" data-target=""><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add Sub Code No.</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- subcontract grid 1 -->
+                                        <div class="row mt-3">
+                                            <div class="col-md-12">
+                                                <table class="table lthl-table table-border">
+                                                    <thead class="bg-linear">
+                                                        <tr>
+                                                            <th scope="col" style="width: 10%;">Sub Code No.</th>
+                                                            <th scope="col" style="width: 10%;text-align: center;">W</th>
+                                                            <th scope="col" style="width: 10%;text-align: center;">L</th>
+                                                            <th scope="col" style="width: 10%;text-align: center;">H</th>
+                                                            <th scope="col" style="width: 10%;text-align: right;">BQ</th>
+                                                            <th scope="col" style="width: 15%;text-align: center;">Elevation Range</th>
+                                                            <th scope="col" style="width: 10%;text-align: center;">Unit Rate</th>
+                                                            <th scope="col" style="width: 10%;">Emergency Cost</th>
+                                                            <th scope="col" style="width: 20%;text-align: right;">Sub Amount(B)</th>
+                                                            <th scope="col" style="width: 20%;text-align: center;">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row">20/11/2021</td>
+                                                            <td style="text-align:center">100%</td>
+                                                            <td style="text-align: center;">20/11/2021</td>
+                                                            <td scope="row" style="text-align: center;">20/11/2021</td>
+                                                            <td style="text-align:right">100%</td>
+                                                            <td style="text-align: center;">20/11/2021</td>
+                                                            <td scope="row" style="text-align: center;">20/11/2021</td>
+                                                            <td style="text-align:center">
+                                                                <div class="d-flex justify-content-center">
+                                                                    <label class="container-checkbox">
+                                                                            <input type="checkbox" checked="checked">
+                                                                            <span class="checkmark"></span>
+                                                                          </label>
+                                                                    <label class="erection-primary erec-label-style ml-4">120,002</label>
+                                                                </div>
+                                                            </td>
+                                                            <td style="text-align:right">20/11/2021</td>
+                                                            <td>
+                                                                <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="row">20/11/2021</td>
+                                                            <td style="text-align:center">100%</td>
+                                                            <td style="text-align: center;">20/11/2021</td>
+                                                            <td scope="row" style="text-align: center;">20/11/2021</td>
+                                                            <td style="text-align:right">100%</td>
+                                                            <td style="text-align: center;">20/11/2021</td>
+                                                            <td scope="row" style="text-align: center;">20/11/2021</td>
+                                                            <td style="text-align:center">
+                                                                <div class="d-flex justify-content-center">
+                                                                    <label class="container-checkbox">
+                                                                            <input type="checkbox" checked="checked">
+                                                                            <span class="checkmark"></span>
+                                                                          </label>
+                                                                    <label class="erection-primary erec-label-style ml-4">120,002</label>
+                                                                </div>
+                                                            </td>
+                                                            <td style="text-align:right">25500</td>
+                                                            <td>
+                                                                <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- subcontract summary -->
+                                        <!-- Lthl -->
+                                        <div class="row mt-3">
+                                            <h4 class="erec-label-head">Subcontractor Summary</h4>
+                                        </div>
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <table class="table lthl-table table-border">
+                                                    <thead class="bg-linear">
+                                                        <tr>
+                                                            <th scope="col" style="width: 10%;">Sub Code No.</th>
+                                                            <th scope="col" style="width: 20%;">Summary No for Subcontractor</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row">3|</td>
+                                                            <td style="text-align:cenetr">L</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Scaffolding Type:tent -->
+                                <div class="bg-linear flexbox mt-3">
+                                    <div>
+                                        <h4 class="scaff-type erec-label-style subtile-heading m-0">Scaffolding Type: <span class="ml-2" style="color: #fff;">Tent</span></h4>
+                                    </div>
+                                    <div class="up-arrow mr-3">
+                                        <img src="../../assets/icons-LTHL/cross-fold.png" alt="cross fold">
+                                        <img src="../../assets/icons-LTHL/up-arrow.png" class="ml-3" alt="arrow img">
+                                    </div>
+                                </div>
+                                <div class="erection-body-1">
+                                    <div class="row mt-3">
+                                        <div class="col-md-4">
+                                            <label class="erection-secondary erec-label-style" style="color: #616161;">Erection Plane Date</label>
+                                            <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style mb-4" id="Elevation-range">
+                                                    <option value="volvo">Select Elevation Range</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                              </select>
+                                        </div>
+                                    </div>
+                                    <!-- work process -->
+                                    <div class="row">
+                                        <h4 class="erec-label-head border-bottom-red"> work progress</h4>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="d-align-center">
+                                            <div class="col-md-4"><label class="erection-primary erec-label-style">Doing Date:</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"><label class="erection-primary erec-label-style">Progress:</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4"><label class="erection-primary erec-label-style">Complete Date</label><br>
+                                                <div class="input-group mb-4">
+                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="text-right">
+                                                    <button class="add-btn" data-toggle="" data-target=""><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add Work Progress</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;">Doing Date</th>
+                                                        <th scope="col" style="width: 20%;text-align: right;">Progress(%)</th>
+                                                        <th scope="col" style="width: 20%;">Complete Date</th>
+                                                        <th scope="col" style="width: 10%;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">100%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">90%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">70%</td>
+                                                        <td>20/11/2021</td>
+                                                        <td><img class="pencil-icon mr-3" src="../../assets/icons-LTHL/pencil.png" alt="pencil img">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mt-4 mb-3">
+                                                <hr style="border: 1px solid #B5B5B5;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- customer 2 -->
+                                    <div class="row">
+                                        <div class="w-100 d-flex ">
+                                            <div class="col-md-1">
+                                                <h4 class="erec-label-head border-bottom-red" style="display: inline-block;">customer</h4>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="erection-primary erec-label-style">summary number for customer:<Span class="ml-2" style="color: #000;">E-LTHL-TBCA-001</Span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-3">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;">BQ</th>
+                                                        <th scope="col" style="width: 20%;">lumpsum price</th>
+                                                        <th scope="col" style="width: 20%;text-align: center;">Amount(B)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row" >25.13</td>
+                                                        <td>25.13</td>
+                                                        <td style="text-align: center;">25.13</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- erection use choose 1 -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mt-4 mb-3">
+                                                <hr style="border: 1px solid #B5B5B5;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="erection-secondary erec-label-style ">Erection Use:</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="d-flex">
+                                            <label class="container-checkbox">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                            <label class="erection-primary erec-label-style ml-4">LTHL</label>
+                                        </div>
+                                        <div class="ml-4 d-flex">
+                                            <label class="container-checkbox">
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                      </label>
+                                            <label class="erection-primary erec-label-style ml-4">Subcontractors</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mt-4 mb-3">
+                                                <hr style="border: 1px solid #B5B5B5;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Lthl 2 -->
+                                    <div class="row">
+                                        <div class="w-100 d-flex ">
+                                            <div class="col-md-1">
+                                                <h4 class="erec-label-head border-bottom-red" style="display: inline-block;">LTHL</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-2">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;">BQ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">25.13</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- subcontractor 2-->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mt-4 mb-3">
+                                                <hr style="border: 1px solid #B5B5B5;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <h4 class="erec-label-head border-bottom-red">Subcontractor</h4>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="d-align-center">
+                                            <div class="col-md-4">
+                                                <label class="erection-secondary erec-label-style" style="color: #616161;">Elevation Range</label>
+                                                <select name="cars" style="color: #B7B7B7;" class="form-control erec-label-style mb-4" id="Elevation-range">
+                                                    <option value="volvo">Select Elevation Range</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="mercedes">Mercedes</option>
+                                                    <option value="audi">Audi</option>
+                              </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="text-right">
+                                                    <button class="add-btn" data-toggle="" data-target=""><span><img class="plus-icon" src="../../assets/icons-LTHL/plus.png" alt="plus img"></span>Add Sub Code No.</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- subcontract grid 1 -->
+                                    <div class="row mt-3">
+                                        <div class="col-md-7">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 20%;">Sub Code No.</th>
+                                                        <th scope="col" style="width: 10%;text-align: right;">BQ</th>
+                                                        <th scope="col" style="width: 15%;text-align: right;">Lumpsum Price[B]</th>
+                                                        <th scope="col" style="width: 20%;text-align: right;">Sub Amount(B)</th>
+                                                        <th scope="col" style="width: 10%;text-align: center;">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">20/11/2021</td>
+                                                        <td style="text-align:right">100%</td>
+                                                        <td style="text-align: right;">20/11/2021</td>
+                                                        <td style="text-align:right">20/11/2021</td>
+                                                        <td style="text-align: center;">
+                                                            <img class="delete-icon" src="../../assets/icons-LTHL/delete.png" alt="delete img">
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- subcontract summary -->
+                                    <!-- Lthl -->
+                                    <div class="row mt-3">
+                                        <h4 class="erec-label-head">Subcontractor Summary</h4>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-4">
+                                            <table class="table lthl-table table-border">
+                                                <thead class="bg-linear">
+                                                    <tr>
+                                                        <th scope="col" style="width: 10%;">Sub Code No.</th>
+                                                        <th scope="col" style="width: 20%;">Summary No for Subcontractor</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">3|</td>
+                                                        <td style="text-align:cenetr">L</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <div class="modal-footer pt-3 flexbox">
+                                <div class="fixed-btn">
+                                    <button type="button" class="btn btn-save mr-3">Save</button>
+                                    <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button></div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

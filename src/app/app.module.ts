@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LTHLLEADERComponent } from './Components/lthl-leader/lthl-leader.component';
 import { NgSelect2Module } from 'ng-select2';
+import { ErectionComponent } from './Components/Erection/erection.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LTHLLEADERComponent
+    LTHLLEADERComponent,
+    ErectionComponent
   ],
   imports: [
     BrowserModule,
