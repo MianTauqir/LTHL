@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LTHLLEADERComponent } from './Components/lthl-leader/lthl-leader.component';
 import { NgSelect2Module } from 'ng-select2';
 import { ErectionComponent } from './Components/Erection/erection.component';
+import { ScaffoldRequestComponent } from './Components/scaffold-request/scaffold-request.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LTHLLEADERComponent,
-    ErectionComponent
+    ErectionComponent,
+    ScaffoldRequestComponent
   ],
   imports: [
     BrowserModule,

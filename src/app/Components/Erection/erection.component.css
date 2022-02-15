@@ -50,10 +50,6 @@ li.select2-selection__choice {
     height: 0;
 }
 
-.modal-backdrop.fade.show {
-    opacity: 0 !important;
-}
-
 .erec-label-style {
     font-family: Calibri;
     font-style: normal;
@@ -304,7 +300,6 @@ select#amount-select {
 .container-checkbox input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
 }
@@ -595,10 +590,6 @@ input:checked+.slider:before {
     text-transform: uppercase;
 }
 
-.close {
-    opacity: 1;
-}
-
 .btn-save {
     background: rgba(255, 6, 1, 0.3);
     color: #AA1C1C;
@@ -644,7 +635,7 @@ input[type="text"] ::placeholder {
 }
 
 .modal-body div {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0px !important;
 }
 
 .erection-main {
