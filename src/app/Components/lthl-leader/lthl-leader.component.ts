@@ -39,7 +39,7 @@ constructor() { }
     this.options = {
       multiple: true,
       closeOnSelect: false,
-      width: '300'
+      width: '300',
     };
   }
 

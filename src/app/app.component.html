@@ -7,133 +7,143 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<!-- <a onclick="window.history.go(-1); return false;" style="cursor: pointer;">Go Back</a> -->
 
 <body>
-    <div class="sidebar close">
-        <div class="logo-details home-content">
-            <i> <img src="../assets/icons-LTHL/jdls.PNG" ></i>
-            <span class="logo_name" style="margin-left: 15%;font-size: small;color:  #D10000;">LOGTHAI-HAILECK ENGINEERING</span>
+    <div [ngClass]="{'sidebar': this.ShowSideBar === true, 'close' : this.ShowSideBar === false }" style="float:none;">
+        <div class="logo-details home-content ">
+            <span style="margin-left: 5%;" class="logo_name" (click)="CloseSidebar()"> <a> <img   src="../../assets/icons-LTHL/left-arrow.png" alt="left arrow"></a></span>
+
+            <i> <img src="../assets/icons-LTHL/jdls.PNG" style="width: 80%;" ></i>
+
+            <span class="logo_name" style="font-size: small;color:  #D10000;">LOGTHAI-HAILECK ENGINEERING</span>
+
         </div>
-        <div class="logo-details home-content">
-            <a href="#"> <i class='bx bx-menu '></i> </a>
+        <div class="logo-details home-content  " (click)="OpenSidebar()">
+            <a href="#"> <i class='bx bx-menu ' style="font-size: 95%;"></i>
+            </a>
         </div>
         <ul class="nav-links">
-            <div class="iocn-link" style="text-align: center;">
-                <a href="#" style="margin-left: 0.7rem;">
-                    <i class="dash"> <img src="../assets/icons-LTHL/dashboard.png" ></i>
-                </a>
-                <i class='bx bxs-chevron-down arrow'></i>
-            </div>
-            <!-- <ul class="sub-menu">
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="dash"> <img src="../assets/icons-LTHL/dashboard.png" width="28%"  ></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+            </li>
+            <li>
+                <!-- <ul class="sub-menu">
                 <li><a class="link_name" href="#">Dashboard</a></li>
             </ul> -->
-            <li>
-                <div class="iocn-link">
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i style="font-size:95%;opacity: 0.8;" class='bx bx-cog'></i>
+                            <span class="link_name">Setting</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Setting</a></li>
+                        <li><a href="#">Customer Management</a></li>
+                        <li><a href="#">Project Management</a></li>
+                        <li><a href="#">Employee Management</a></li>
+                        <li><a href="#">LTHL Leader</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class="dash"> <img src="../assets/icons-LTHL/multi.png" width="28%" ></i>
+                            <span class="link_name">User Management</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">User Management</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Login Form</a></li>
+                        <li><a href="#">Card Design</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">
-                        <i style="font-size: xx-large;opacity: 0.8;" class='bx bx-cog'></i>
-                        <span class="link_name">Setting</span>
+                        <i class="dash"> <img src="../assets/icons-LTHL/custd.png" width="28%" ></i>
+                        <span class="link_name">Customer Data</span>
                     </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Setting</a></li>
-                    <li><a href="#">Customer Management</a></li>
-                    <li><a href="#">Project Management</a></li>
-                    <li><a href="#">Employee Management</a></li>
-                    <li><a href="#">LTHL Leader</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link">
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Customer Data</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">
-                        <i class="dash"> <img src="../assets/icons-LTHL/multi.png" ></i>
-                        <span class="link_name">User Management</span>
+                        <i class="dash"> <img src="../assets/icons-LTHL/custd.png"  width="28%"></i>
+                        <span class="link_name">Subcontract Data</span>
                     </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">User Management</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Login Form</a></li>
-                    <li><a href="#">Card Design</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/custd.png" ></i>
-                    <span class="link_name">Customer Data</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Customer Data</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/custd.png"></i>
-                    <span class="link_name">Subcontract Data</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Subcontract Data</a></li>
-                </ul>
-            </li>
-            <li>
-                <div class="iocn-link">
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Subcontract Data</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class="dash"><img src="../assets/icons-LTHL/check.png" width="28%" ></i>
+                            <span class="link_name">Scaffloading Registration</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Scaffloading Registration</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">
-                        <i class="dash"><img src="../assets/icons-LTHL/check.png" ></i>
-                        <span class="link_name">Scaffloading Registration</span>
+                        <i class="dash"> <img src="../assets/icons-LTHL/manp.png" width="28%" ></i>
+                        <span class="link_name">Manpower Registration</span>
                     </a>
-                    <i class='bx bxs-chevron-down arrow'></i>
-                </div>
-                <ul class="sub-menu">
-                    <li><a class="link_name" href="#">Scaffloading Registration</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/manp.png" ></i>
-                    <span class="link_name">Manpower Registration</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Manpower Registration</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/prodc.png" ></i>
-                    <span class="link_name">Productivity Registration</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Productivity Registration</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/sales.png" ></i>
-                    <span class="link_name">Sales and Expenses</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Sales and Expenses</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/biling.png" ></i>
-                    <span class="link_name">Billing</span>
-                </a>
-                <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Billing</a></li>
-                </ul>
-            </li>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Manpower Registration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="dash"> <img src="../assets/icons-LTHL/prodc.png" width="28%" ></i>
+                        <span class="link_name">Productivity Registration</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Productivity Registration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="dash"> <img src="../assets/icons-LTHL/sales.png" width="28%" ></i>
+                        <span class="link_name">Sales and Expenses</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Sales and Expenses</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="dash"> <img src="../assets/icons-LTHL/biling.png" width="20%" ></i>
+                        <span class="link_name">Billing</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Billing</a></li>
+                    </ul>
+                </li>
 
-            <li>
-                <a href="#">
-                    <i class="dash"> <img src="../assets/icons-LTHL/logout.png" ></i>
-                    <span class="link_name">LOG OUT</span>
-                </a>
-            </li>
-            <li>
-                <div class="profile-details"></div>
-            </li>
+                <li>
+                    <a href="#">
+                        <i class="dash"> <img src="../assets/icons-LTHL/logout.png" width="28%" ></i>
+                        <span class="link_name">LOG OUT</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="profile-details"></div>
+                </li>
         </ul>
     </div>
     <script src="../assets/js/script.js"></script>

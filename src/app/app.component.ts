@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LTHL';
+ShowSideBar: boolean = false;
+
+  OpenSidebar() {
+    this.ShowSideBar = true;
+  }
+  CloseSidebar() {
+    this.ShowSideBar = false;
+  }
 }
